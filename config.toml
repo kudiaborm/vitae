@@ -10,7 +10,7 @@ publishDir = "public"
 
 [params]
   logo = "/images/logo.png"
-  description ="The Intersection of Faith, Gender, and Tech"
+  description ="Faith, Gender, and Tech"
 
 [params.author]
   name = "Adwoa Kudiabor"

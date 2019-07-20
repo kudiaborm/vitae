@@ -179,12 +179,12 @@ section.recent-posts {
 }
 
 .post-top-meta {
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
 }
 
 .post-top-meta .author-thumb {
-    width: 72px;
-    height: 72px;
+    width: 32px;
+    height: 32px;
 }
 
 .post-top-meta.authorpage .author-thumb {
@@ -300,11 +300,14 @@ span.post-read-more a:hover {
 }
 
 .mainheading h1.sitetitle {
-    font-family: Righteous;
+    font-family: essonnes-headline;
+    color: teal;
 }
 
 .mainheading h1.posttitle {
-    font-weight: 700;
+    font-family: orpheus;
+    font-style: italic;
+    font-weight: 300;
     margin-bottom: 1rem;
 }
 
@@ -325,7 +328,7 @@ span.post-read-more a:hover {
 }
 
 .article-post {
-    font-family: Merriweather;
+    font-family: proxima-nova;
     font-size: 1.1rem;
     line-height: 1.84;
     color: rgba(0, 0, 0, .8);
