@@ -1,0 +1,64 @@
+baseURL = "http://vitae.cafe/"
+languageCode = "en-us"
+title = "vitae"
+theme = "Mediumish"
+summaryLength = 25
+copyright = "Adwoa Kudiabor - All rights reserved"
+enableEmoji = true
+publishDir = "public"
+#googleAnalytics = "UA-50078050-2"
+
+[params]
+  logo = "/images/logo.png"
+  description ="The Intersection of Faith, Gender, and Tech"
+
+[params.author]
+  name = "Adwoa Kudiabor"
+  thumbnail = "/images/author.png"
+  description = "Creator of this blog."
+
+[params.index]
+  picture = "/images/author.png"
+  title = "Adwoa Kudiabor"
+  subtitle = ""
+  mdtext = ''''''
+  alertbar = false
+
+[params.social]
+  github = "<username>"
+  linkedin = "<username>"
+  xing = "<username>"
+  medium = "<username>"
+  twitter = "<username>"
+  instagram = "<username>"
+
+## Main Menu
+[[menu.main]]
+    name = "Blog"
+    weight = 100
+    identifier = "blog"
+    url = "/blog"
+[[menu.main]]
+    name = "Faith"
+    weight = 200
+    parent = "Blog"
+    identifier = "faith"
+    url = "/faith"
+[[menu.main]]
+    name = "Gender"
+    weight = 300
+    parent = "Blog"
+    identifier = "gender"
+    url = "/gender"
+[[menu.main]]
+    name = "Tech"
+    weight = 400
+    parent = "Blog"
+    identifier = "tech"
+    url = "/tech"
+[[menu.main]]
+    name = "About Me"
+	parent = "Blog"
+	identifier = "about"
+    weight = 500
+    url = "/about"
