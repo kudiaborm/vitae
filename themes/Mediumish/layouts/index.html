@@ -8,9 +8,10 @@
         <!-- Posts Index
         ================================================== -->
         <section class="recent-posts">            
-            <div class="section-title">                
+            <div class="section-title text-center">    
+                <h1><span>Recent Posts</span></h1>                
             </div>            
-            <div class="row listrecent">
+            <div class="row listrecent px-2">
                 {{ $first := index ($.Site.Taxonomies.categories.Get "faith") 1 }}
                 {{- partial "list-partials/postbox.html" $first -}}
                 {{ $second := index ($.Site.Taxonomies.categories.Get "tech") 1 }}

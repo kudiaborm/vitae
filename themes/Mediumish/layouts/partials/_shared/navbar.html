@@ -1,15 +1,12 @@
 <!-- Begin Menu Navigation
 ================================================== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-white fixed-top mediumnavigation nav-down">
     <div class="container pr-0">
         <!-- Begin Logo -->
-        <a class="navbar-brand" href="{{ .Site.BaseURL }}/">
+        <a class="navbar-brand py-0" href="{{ .Site.BaseURL }}/">
 
-            {{ with .Site.Params.logo }}
-            <img src="{{ . | urlize | relURL }}" alt="logo">
-            {{ else }}
-            <span style="font-family:Righteous;">{{.Site.Title}}</span>
-            {{ end }}
+            <h1 class="sitelogo m-0">v.</h1>
+
         </a>
         <!-- End Logo -->
 
@@ -23,9 +20,20 @@
             {{ $currentPage := . }}
             <ul class="navbar-nav ml-auto">
                 {{ range .Site.Menus.main }} 
-                <li class="nav-item {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+                    {{ if .HasChildren }}
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ .Name | title }}</a>
+                        <div class="dropdown-menu border-light" aria-labelledby="navbarDropdown">
+                        {{ range .Children }}
+                            <a class="dropdown-item" href="{{ .URL }}">{{ .Name | title }}</a>
+                        {{ end }}
+                        </div>
+                        </li>
+                    {{ else }}
+                    <li class="nav-item {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
                     <a class="nav-link" href="{{ .URL }}">{{ .Name | title }}</a>
-                </li>
+                    </li>
+                    {{ end }}
                 {{ end }}
             </ul>
         </div>

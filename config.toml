@@ -1,6 +1,6 @@
 baseURL = "http://vitae.cafe/"
 languageCode = "en-us"
-title = "vitae"
+title = "vitae."
 theme = "Mediumish"
 summaryLength = 25
 copyright = "Adwoa Kudiabor - All rights reserved"
@@ -10,7 +10,7 @@ publishDir = "public"
 
 [params]
   logo = "/images/logo.png"
-  description ="Faith, Gender, and Tech"
+  description ="Expanding faith, gender, and tech."
 
 [params.author]
   name = "Adwoa Kudiabor"
@@ -39,26 +39,31 @@ publishDir = "public"
     identifier = "blog"
     url = "/blog"
 [[menu.main]]
+    name = "All Posts"
+    weight = 150
+    parent = "blog"
+    identifier = "all"
+    url = "/blog"
+[[menu.main]]
     name = "Faith"
     weight = 200
-    parent = "Blog"
+    parent = "blog"
     identifier = "faith"
-    url = "/faith"
+    url = "/categories/faith"
 [[menu.main]]
     name = "Gender"
     weight = 300
-    parent = "Blog"
+    parent = "blog"
     identifier = "gender"
-    url = "/gender"
+    url = "/categories/gender"
 [[menu.main]]
     name = "Tech"
     weight = 400
-    parent = "Blog"
+    parent = "blog"
     identifier = "tech"
-    url = "/tech"
+    url = "/categories/tech"
 [[menu.main]]
     name = "About Me"
-	parent = "Blog"
 	identifier = "about"
     weight = 500
     url = "/about"

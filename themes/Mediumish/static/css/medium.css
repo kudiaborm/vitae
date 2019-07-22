@@ -8,7 +8,7 @@ License: https://www.wowthemes.net/freebies-license/
 }
 
 a {
-    color: #00ab6b;
+    color: #c8e6db;
     transition: all 0.2s;
 }
 
@@ -59,19 +59,14 @@ section.recent-posts {
     margin-bottom: 0;
 }
 
-.section-title h2 {
+
+.section-title h1{
+    font-family: operetta-8;
+    font-weight: 300;
     border-bottom: 1px solid rgba(0, 0, 0, .125);
     margin-bottom: 25px;
-    font-weight: 700;
-    font-size: 1.4rem;
-    margin-bottom: 27px;
-}
-
-.section-title span {
-    border-bottom: 1px solid rgba(0, 0, 0, .44);
     display: inline-block;
-    padding-bottom: 20px;
-    margin-bottom: -1px;
+    width: 100%;
 }
 
 .article-post ol,
@@ -138,8 +133,9 @@ section.recent-posts {
 
 .listfeaturedtag h2.card-title,
 .listrecent h2.card-title {
-    font-size: 1.3rem;
-    font-weight: 700;
+    font-family: operetta-8;
+    font-size: 1.6rem;
+    font-weight: 400;
     line-height: 1.25;
 }
 
@@ -273,8 +269,12 @@ span.post-read-more a:hover {
     color: green;
 }
 
-.mediumnavigation .navbar-brand {
-    font-weight: 500;
+.mediumnavigation .navbar-brand h1{
+    font-family: essonnes-headline;
+    font-style: italic;
+    font-weight: 700;
+    color: #c8e6db;
+
 }
 
 .mediumnavigation .dropdown-menu {
@@ -301,14 +301,21 @@ span.post-read-more a:hover {
 
 .mainheading h1.sitetitle {
     font-family: essonnes-headline;
-    color: teal;
+    color: #c8e6db;
 }
 
 .mainheading h1.posttitle {
-    font-family: orpheus;
-    font-style: italic;
-    font-weight: 300;
+    font-family: operetta-8;
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 500;
     margin-bottom: 1rem;
+}
+
+.mainheading p.lead {
+    font-family: essonnes-headline;
+    font-style: normal;
+    font-weight: 100;
 }
 
 .footer {
@@ -335,7 +342,7 @@ span.post-read-more a:hover {
 }
 
 blockquote {
-    border-left: 4px solid #00ab6b;
+    border-left: 4px solid #c8e6db;
     padding: 0 20px;
     font-style: italic;
     color: rgba(0, 0, 0, .5);

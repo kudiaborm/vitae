@@ -5,7 +5,9 @@
 	{{ with .Site.Params.logo }}
 	<link rel="icon" href="{{ . | urlize | relURL }}">
 	{{ end }}
-	<title>{{ .Page.Title }} | {{ .Site.Title }}</title>
+	<a href="{{ .Site.BaseURL }}/">
+		<title>{{ .Page.Title }} | {{ .Site.Title }}</title>
+	</a>
 	{{ with .Site.Params.meta.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.meta.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
