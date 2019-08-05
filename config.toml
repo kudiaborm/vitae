@@ -10,15 +10,15 @@ publishDir = "public"
 
 [params]
   logo = "/images/logo.png"
-  description ="Expanding faith, gender, and tech."
+  description ="Expressing the Person"
 
 [params.author]
   name = "Adwoa Kudiabor"
-  thumbnail = "/images/author.png"
+  thumbnail = "/images/author.jpg"
   description = "Creator of this blog."
 
 [params.index]
-  picture = "/images/author.png"
+  picture = "/images/author.jpg"
   title = "Adwoa Kudiabor"
   subtitle = ""
   mdtext = ''''''

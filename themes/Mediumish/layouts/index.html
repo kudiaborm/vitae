@@ -1,9 +1,11 @@
 {{ define "header"}}
+    <header>
     {{- partial "_shared/navbar.html" . -}}
+    {{- partial "_shared/title.html" . -}}
+    </header>
 {{ end }}
 
 {{ define "main" }}
-    {{- partial "_shared/title.html" . -}}
     <div class="main-content">
         <!-- Posts Index
         ================================================== -->

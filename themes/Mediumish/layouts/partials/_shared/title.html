@@ -1,8 +1,18 @@
 <!-- Site Title
 ================================================== -->
-<div class="mainheading">
-    <h1 class="sitetitle font-weight-bold font-italic text-center">{{ .Site.Title }}</h1>
-    <p class="lead text-center">
-         {{ .Site.Params.Description }}
-    </p>
+<div class="view">
+<div class="mainheading h-100 d-flex justify-content-center align-items-middle">
+  <table class="h-100 w-100">
+    <tbody>
+      <tr>
+        <td class="align-middle">
+        <h1 class="sitetitle w-100 h-auto font-weight-bold font-italic text-center">{{ .Site.Title }}</h1>
+        <p class="lead w-100 text-center">
+             {{ .Site.Params.Description }}
+        </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 </div>

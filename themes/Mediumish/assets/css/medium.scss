@@ -3,6 +3,34 @@ Template Name: Mediumish
 Copyright: Sal, WowThemes.net, https://www.wowthemes.net 
 License: https://www.wowthemes.net/freebies-license/ 
 */
+
+html,
+body,
+header {
+    height: 100%
+}
+
+@media (min-width: 412px) {
+  .view {
+    height: 100%;
+    background-image: url(/images/h.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+@media (max-width: 411px) {
+  .view {
+    height: 100%;
+    background-image: url(/images/hm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+
 .mainheading {
     padding: 1rem 0rem;
 }
@@ -35,9 +63,9 @@ pre {
 }
 
 .mediumnavigation {
-    background: rgba(255, 255, 255, .97);
-    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15);
+    background: rgba(255, 255, 255, .97) !important;
     transition: top 0.2s ease-in-out;
+
 }
 
 .main-content {
@@ -299,8 +327,10 @@ span.post-read-more a:hover {
     margin-right: 5px;
 }
 
-.mainheading h1.sitetitle {
+.mainheading,
+h1.sitetitle {
     font-family: essonnes-headline;
+    font-size: 1.75em;
     color: #c8e6db;
 }
 
@@ -308,14 +338,17 @@ span.post-read-more a:hover {
     font-family: operetta-8;
     font-size: 2.3rem;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     margin-bottom: 1rem;
+    color: black;
+
 }
 
 .mainheading p.lead {
-    font-family: essonnes-headline;
+    font-family: proxima-nova;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 300;
+    color: #c8e6dbcc;
 }
 
 .footer {
@@ -406,11 +439,11 @@ blockquote {
     }
 
     .alertbar {
-        position: relative !Important;
+        position: relative !important;
         margin-bottom: 20px;
         margin-top: 20px;
-        box-shadow: none !Important;
-        padding-right: 14px !Important;
+        box-shadow: none !important;
+        padding-right: 14px !important;
     }
 
     #comments {
@@ -418,7 +451,7 @@ blockquote {
     }
 
     .jumbotron.fortags {
-        margin-bottom: 0 !Important;
+        margin-bottom: 0 !important;
     }
 
     .alertbar form {
@@ -431,13 +464,13 @@ blockquote {
     }
 
     .alertbar input[type="submit"] {
-        border-radius: 3px !Important;
+        border-radius: 3px !important;
     }
 
     .alertbar input[type="email"] {
-        margin-right: 0px !Important;
+        margin-right: 0px !important;
         display: block;
-        border-right: 1px solid #ddd !Important;
+        border-right: 1px solid #ddd !important;
         margin-bottom: 10px;
     }
 
