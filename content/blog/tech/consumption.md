@@ -1,5 +1,5 @@
 ---
-title: "Social Media Consumption"
+title: "Prayer Media Consumption"
 date: 2019-07-19T23:55:19-04:00
 categories: ["tech"]
 weight: 11

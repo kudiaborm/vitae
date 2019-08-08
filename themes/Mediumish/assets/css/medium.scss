@@ -163,13 +163,14 @@ section.recent-posts {
 .listrecent h2.card-title {
     font-family: operetta-8;
     font-size: 1.6rem;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.25;
+    border-right: 2px solid #f1cfcf!important
 }
 
 .listfeaturedtag h4.card-text,
 .listrecent h4.card-text {
-    color: rgba(0, 0, 0, .44);
+    color: rgba(0, 0, 0, .7);
     font-size: 0.95rem;
     line-height: 1.6;
     font-weight: 400;
@@ -247,7 +248,7 @@ span.author-meta {
 
 span.post-date,
 span.post-read {
-    color: rgba(0, 0, 0, .44);
+    color: rgba(135, 0, 0, .44);
 }
 
 span.post-read-more {
