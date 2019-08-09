@@ -10,7 +10,7 @@
         <!-- Posts Index
         ================================================== -->
         <section class="recent-posts">                      
-            <div class="row listrecent px-2">
+            <div class="row listrecent mx-2">
                 {{ $first := index ($.Site.Taxonomies.categories.Get "faith") 0 }}
                 {{- partial "list-partials/postbox.html" $first -}}
                 {{ $second := index ($.Site.Taxonomies.categories.Get "tech") 0 }}
