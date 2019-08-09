@@ -11,11 +11,11 @@
         ================================================== -->
         <section class="recent-posts">                      
             <div class="row listrecent px-2">
-                {{ $first := index ($.Site.Taxonomies.categories.Get "faith") 1 }}
+                {{ $first := index ($.Site.Taxonomies.categories.Get "faith") 0 }}
                 {{- partial "list-partials/postbox.html" $first -}}
-                {{ $second := index ($.Site.Taxonomies.categories.Get "tech") 1 }}
+                {{ $second := index ($.Site.Taxonomies.categories.Get "tech") 0 }}
                 {{- partial "list-partials/postbox.html" $second -}}
-                {{ $third := index ($.Site.Taxonomies.categories.Get "gender") 1 }}
+                {{ $third := index ($.Site.Taxonomies.categories.Get "gender") 0 }}
                 {{- partial "list-partials/postbox.html" $third -}}      
             </div>
         </section>

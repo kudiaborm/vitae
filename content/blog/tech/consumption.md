@@ -1,8 +1,8 @@
 ---
-title: "Prayer Media Consumption"
+title: "Coming Soon"
 date: 2019-07-19T23:55:19-04:00
 categories: ["tech"]
-weight: 11
-summary: Has our attention economy had an effect on the way we pray?
+weight: 3999
+summary: Coming Soon
 ---
 

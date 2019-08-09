@@ -1,8 +1,8 @@
 ---
-title: "Is the Heart Half Full"
+title: "The Heart Half Full"
 date: 2019-07-19T23:55:02-04:00
 categories: ["faith"]
-weight: 15
+weight: 1998
 summary: "What does it mean to have a hole in your heart? What if the our hearts can't be filled and that is a good thing?"
 ---
 
